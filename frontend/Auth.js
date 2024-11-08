@@ -13,7 +13,7 @@ document.getElementById('register-form')?.addEventListener('submit', async (e) =
         const result = await response.json();
         if (result.success) {
             alert('Registro exitoso, puedes iniciar sesión ahora.');
-            window.location.href = 'login.html';
+            window.location.href = 'frontend/login.html'; // Ajustar ruta a login.html
         } else {
             alert('Error al registrar: ' + result.error);
         }
